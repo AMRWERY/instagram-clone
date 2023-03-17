@@ -1,6 +1,6 @@
 <template>
     <ion-content :fullscreen="true" class="ion-padding" :filters="filters" :posts="posts">
-        <VuegramPost />
+        <VuegramPost v-for="(post, index) in posts" :key="index" :post="post" />
     </ion-content>
 </template>
 
